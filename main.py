@@ -1,3 +1,5 @@
+#Chamando arquivo restaurante
+
 from restaurante import Pedidos
 
 #atividade
