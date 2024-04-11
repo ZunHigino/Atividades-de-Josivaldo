@@ -2,7 +2,7 @@
 
 from restaurante import Pedidos
 
-#atividade
+#Atividade 10
 
 if __name__ == '__main__':
     L_itens = []
