@@ -1,33 +1,16 @@
 #Puxando classe do arquivo banco
 
-from banco import ContaBancaria
+from formas import Triangulo
 
-#atividade 3
+#atividade 5
 
 if __name__ == '__main__':
-    conta1 = ContaBancaria('123123', 1000, 'Higino')
-
-    print(type(conta1.saldo))
+    triangulo_equi = Triangulo(10,10,10)
+    triangulo = Triangulo(3,4,5)
     
-    rodar = True
-    
-    while rodar:
-        ContaBancaria.menu()
-
-        r = int(input())
-    
-        if r == 1:
-            qnt = int(input('Quanto dinheiro deseja sacar?: '))
-            conta1.sacar(qnt)
-                
-        elif r == 2:
-            qnt = int(input('Quanto dinheiro deseja depositar?: '))
-            conta1.depositar(qnt)
-            
-        elif r ==  3:
-            ContaBancaria.saldo_atual(conta1.saldo)
-            
-        elif r == 0:
-            rodar = False
-            
-    print('Obrigado pela visita!')
+    print('Triângulo 1')
+    Triangulo.calculo_area(triangulo_equi.ladobase, triangulo_equi.ladoAltura)
+    Triangulo.calculo_perimetro(triangulo_equi.lado1, triangulo_equi.ladoAltura, triangulo_equi.ladobase)
+    print('Triângulo 2')
+    Triangulo.calculo_area(triangulo.ladoAltura, triangulo.ladobase)
+    Triangulo.calculo_perimetro(triangulo.lado1, triangulo.ladoAltura, triangulo.ladobase)
